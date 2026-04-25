@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "inflow-outflow.placeholder.v1",
+  "generatedAt": null,
+  "notes": "Placeholder only. Outflow is multi-definition; keep separate measures rather than implying a single truth. All 'value' fields must remain null until populated from sourced datasets.",
+  "series": [
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "netInternationalMigration",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "Census Net International Migration",
+      "sourceUrl": "https://www.census.gov/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Net movement (inflow minus outflow) estimate. May be model-based; document uncertainty."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow based on tax-return address changes. Universe is tax filers/returns; not a full population flow."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow based on tax-return address changes. Universe is tax filers/returns; not a full population flow."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Enforcement outflow only (removals/returns). Not equivalent to total emigration."
+    }
+  ]
+}

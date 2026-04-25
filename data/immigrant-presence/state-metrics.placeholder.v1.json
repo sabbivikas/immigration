@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "immigrant-presence.state-metrics.placeholder.v1",
+  "generatedAt": null,
+  "notes": "Placeholder only. All metric 'value' fields must remain null until populated from sourced datasets (e.g., ACS).",
+  "metrics": [
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "foreignBornPopulation",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "Census ACS API",
+      "sourceUrl": "https://api.census.gov/data.html",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Foreign-born population (stock). Store ACS vintage in dataYear."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "nonCitizenPopulation",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "Census ACS API",
+      "sourceUrl": "https://api.census.gov/data.html",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Non-citizen foreign-born residents (stock)."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "immigrantWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "Census ACS API",
+      "sourceUrl": "https://api.census.gov/data.html",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Foreign-born employed workers. Define universe (civilian employed, 16+)."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "Census ACS API",
+      "sourceUrl": "https://api.census.gov/data.html",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Derived from ACS occupation codes; must document STEM definition in methodology when implemented."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "Census ACS API",
+      "sourceUrl": "https://api.census.gov/data.html",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Derived from ACS occupation codes; must document healthcare definition when implemented."
+    }
+  ]
+}

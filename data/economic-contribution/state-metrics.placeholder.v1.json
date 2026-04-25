@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "economic-contribution.state-metrics.placeholder.v1",
+  "generatedAt": null,
+  "notes": "Placeholder only. All metric 'value' fields must remain null until populated from sourced datasets (e.g., AIC). Keep 'dataYear' (official vintage) separate from 'lastFetched' (your retrieval date).",
+  "metrics": [
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "taxesPaid",
+      "value": null,
+      "unit": "usd",
+      "dataYear": null,
+      "sourceName": "American Immigration Council (AIC)",
+      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Total taxes paid by immigrants (definition must match the source: federal/state/local and household vs individual)."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "spendingPower",
+      "value": null,
+      "unit": "usd",
+      "dataYear": null,
+      "sourceName": "American Immigration Council (AIC)",
+      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Immigrant spending power (typically disposable income estimate; confirm source definition)."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "American Immigration Council (AIC)",
+      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Number of immigrant entrepreneurs/business owners (confirm exact universe)."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "American Immigration Council (AIC)",
+      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "If sourced from AIC, keep consistent with their STEM definition; otherwise derive from ACS in immigrant-presence dataset."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "American Immigration Council (AIC)",
+      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "If sourced from AIC, keep consistent with their healthcare definition; otherwise derive from ACS in immigrant-presence dataset."
+    },
+    {
+      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": null,
+      "sourceName": "American Immigration Council (AIC)",
+      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Publisher estimate. Must be labeled as estimate and not treated as real-time."
+    }
+  ]
+}

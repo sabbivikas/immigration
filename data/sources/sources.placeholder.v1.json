@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "sources.placeholder.v1",
+  "generatedAt": null,
+  "notes": "Placeholder only. Replace with real source registry entries. Keep 'lastFetched' as the date YOU retrieved the source, separate from any official 'dataYear' within datasets.",
+  "sources": [
+    {
+      "sourceName": "Census ACS API",
+      "sourceUrl": "https://api.census.gov/data.html",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Use for foreign-born population, citizenship, employment, occupation, income, education, place of birth. Values are lagged; always store the ACS vintage as dataYear."
+    },
+    {
+      "sourceName": "American Immigration Council (AIC)",
+      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Use for state-level taxes paid, spending power, entrepreneurship, STEM and healthcare workers, undocumented contribution. Prefer stable downloads; otherwise store raw artifacts under data/raw with checksums."
+    },
+    {
+      "sourceName": "DHS/OHSS Yearbook",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Use for lawful immigration, naturalization, refugees, asylees. Often PDF/Excel; normalize into JSON with explicit dataYear."
+    },
+    {
+      "sourceName": "Census Net International Migration",
+      "sourceUrl": "https://www.census.gov/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Use for inflow/outflow estimates and net movement. Model-based; label uncertainty and avoid implying real-time precision."
+    },
+    {
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Use for address-change-based inflow/outflow between states (tax-return universe). Not a full population measure; label limitations."
+    },
+    {
+      "sourceName": "BLS",
+      "sourceUrl": "https://www.bls.gov/developers/",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "Use for labor/industry context series. Keep as context unless directly tied to immigrant measures via ACS."
+    }
+  ]
+}
