@@ -51,31 +51,46 @@ export default function PageClient() {
       <HistoricalContext />
       <AboutData />
 
-      <footer className="relative z-10 bg-white border-t border-black/[.06]">
-        <div className="max-w-5xl mx-auto px-8 py-10 flex flex-wrap items-center justify-between gap-4 text-xs text-muted">
-          <span>Track Migrations</span>
-          <div className="flex gap-6">
-            <Link href="/about" className="hover:text-ink transition-colors">
-              About
-            </Link>
-            <Link href="/methodology" className="hover:text-ink transition-colors">
-              Methodology
-            </Link>
-            <Link href="/contact" className="hover:text-ink transition-colors">
-              Contact
-            </Link>
+      <footer className="relative z-10 bg-bg border-t border-black/[.06]">
+        <div className="max-w-5xl mx-auto px-8 py-10 flex flex-col gap-5 text-xs text-muted">
+          <div className="flex flex-wrap items-center justify-between gap-4 gap-y-3">
+            <span className="font-medium text-ink tracking-tight">
+              Migration visualization (fork)
+            </span>
+            <div className="flex flex-wrap gap-6">
+              <Link href="/about" className="hover:text-ink transition-colors">
+                About
+              </Link>
+              <Link href="/methodology" className="hover:text-ink transition-colors">
+                Methodology
+              </Link>
+              <Link href="/contact" className="hover:text-ink transition-colors">
+                Contact
+              </Link>
+            </div>
           </div>
-          <span>
-            Built by{" "}
+          <p className="max-w-3xl leading-relaxed text-muted">
+            Built on a fork of{" "}
+            <a
+              href="https://trackmigrations.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline decoration-muted/40 decoration-[0.5px] underline-offset-4 hover:decoration-ink transition-colors"
+            >
+              Track Migrations
+            </a>{" "}
+            by Isabelle. Modified and expanded by Vikas Sabbi. Original
+            creator:{" "}
             <a
               href="https://x.com/isareksopuro"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline decoration-muted/40 decoration-[0.5px] underline-offset-4 hover:decoration-ink hover:text-ink transition-colors"
+              className="text-ink underline decoration-muted/40 decoration-[0.5px] underline-offset-4 hover:decoration-ink transition-colors"
             >
               @isareksopuro
             </a>
-          </span>
+            .
+          </p>
         </div>
       </footer>
     </>

@@ -3,15 +3,16 @@
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
-  --color-bg: #FAFAF8;
+  /* Cool-neutral paper — light fork styling; map/chart semantic colors unchanged */
+  --color-bg: #F4F6FA;
   --color-card: #FFFFFF;
 
-  --color-ink: #1D1D1F;
-  --color-muted: #86868B;
+  --color-ink: #151922;
+  --color-muted: #6B7280;
   --color-hairline: rgba(0, 0, 0, 0.06);
 
-  --color-map-neutral: #F0F0F0;
-  --color-map-stroke: #DCDCDC;
+  --color-map-neutral: #ECEEF2;
+  --color-map-stroke: #D1D5DB;
 
   --color-enforce-arrest: #CC6B63;
   --color-enforce-detained: #E0A08A;

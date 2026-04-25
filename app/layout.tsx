@@ -8,9 +8,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Track Migrations",
+  title: {
+    default:
+      "US migration visualization · modified fork (Track Migrations)",
+    template: "%s · migration viz",
+  },
   description:
-    "Interactive visualization of immigration to the United States — where people crossed, where they settled, and why they came.",
+    "Modified fork of Track Migrations by Vikas Sabbi — same interactive map and editorial framing: where people crossed, where they settled, and why they came. Original project by Isabelle Reksopuro.",
 };
 
 export default function RootLayout({
@@ -20,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans bg-white text-ink antialiased">
+      <body className="font-sans bg-bg text-ink antialiased">
         <script
           dangerouslySetInnerHTML={{
             __html: `if ('scrollRestoration' in history) history.scrollRestoration = 'manual';`,

@@ -2,12 +2,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About · Track Migrations",
+  title: "About · migration visualization (fork)",
 };
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-bg">
       <div className="max-w-3xl mx-auto px-8 py-24">
         <Link
           href="/"
@@ -22,6 +22,35 @@ export default function AboutPage() {
         <h1 className="text-4xl md:text-5xl font-semibold text-ink tracking-tight leading-[1.05] mb-10">
           What this is
         </h1>
+
+        <div className="mb-10 rounded-lg border border-black/[.08] bg-bg px-5 py-4 text-sm text-ink/85 leading-relaxed">
+          <p className="font-medium text-ink mb-2">This site is a modified fork</p>
+          <p>
+            This deployment is maintained by{" "}
+            <span className="text-ink font-medium">Vikas Sabbi</span>. It is
+            derived from{" "}
+            <a
+              href="https://trackmigrations.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+            >
+              Track Migrations
+            </a>{" "}
+            by{" "}
+            <a
+              href="https://x.com/isareksopuro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+            >
+              Isabelle Reksopuro
+            </a>
+            . For this fork, statistics and methodology match the upstream
+            project; this pass updates branding, attribution, and light styling
+            only.
+          </p>
+        </div>
 
         <div className="text-base text-ink/80 leading-relaxed space-y-5">
           <p>
