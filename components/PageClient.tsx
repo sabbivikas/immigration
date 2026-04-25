@@ -20,6 +20,9 @@ const WhyTheyCame = dynamic(
 const WhatHappenedNext = dynamic(
   () => import("@/components/sections/WhatHappenedNext")
 );
+const SettlementContribution = dynamic(
+  () => import("@/components/sections/SettlementContribution")
+);
 const WhatTheyBuilt = dynamic(
   () => import("@/components/sections/WhatTheyBuilt")
 );
@@ -46,6 +49,7 @@ export default function PageClient() {
       <WhereTheyCameFrom />
       <WhyTheyCame />
       <WhatHappenedNext />
+      <SettlementContribution />
       <WhatTheyBuilt />
       <ByTheNumbers />
       <HistoricalContext />
