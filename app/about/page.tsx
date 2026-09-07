@@ -46,40 +46,37 @@ export default function AboutPage() {
             >
               Isabelle Reksopuro
             </a>
-            . For this fork, statistics and methodology match the upstream
-            project; this pass updates branding, attribution, and light styling
-            only.
+            . The concept, design, and data pipeline are her work; this fork
+            keeps her data and methodology intact and builds on top of them.
           </p>
         </div>
 
         <div className="text-base text-ink/80 leading-relaxed space-y-5">
           <p>
-            I built{" "}
-            <a
-              href="/"
-              className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
-            >
-              Track Migrations
-            </a>{" "}
-            because the numbers in the immigration debate rarely come with
-            context. A headline says &ldquo;2.4 million encounters&rdquo;
-            and most people have no frame of reference for what that means,
-            where those people came from, or what happened to them after
-            they arrived.
+            I keep this fork because the numbers in the immigration debate
+            rarely come with context. A headline says &ldquo;2.4 million
+            encounters&rdquo; and most people have no frame of reference for
+            what that means, where those people came from, or what happened
+            to them after they arrived. I came to the US from India for grad
+            school and stayed to build things here, so the question behind
+            the data is personal too.
           </p>
           <p>
-            This site tries to make the data tangible. Each dot on the map
-            represents roughly 300 people. The editorial sections below the
-            map reframe the numbers around real contributions: taxes paid,
-            industries sustained, GDP growth. The goal is to show both the
-            scale and the humanity behind immigration data without taking
-            a political position.
+            The site makes the data tangible. Each dot on the map represents
+            roughly 300 people. The editorial sections below the map reframe
+            the numbers around real contributions: taxes paid, industries
+            sustained, GDP growth. The goal is to show both the scale and
+            the humanity behind immigration data without taking a political
+            position.
           </p>
           <p>
-            The data comes from US government sources: CBP for border
-            encounters, Census ACS for settlement patterns, USCIS for
-            legal admissions, and several research institutions for
-            economic impact. Full sourcing is on the{" "}
+            What this fork adds on top of the original: a settlement and
+            contribution section that pairs American Immigration Council and
+            Census Bureau figures for every state, and data refreshes as
+            agencies publish new releases. The data comes from US government
+            sources: CBP for border encounters, Census ACS for settlement
+            patterns, USCIS for legal admissions, and research institutions
+            for economic impact. Full sourcing is on the{" "}
             <Link
               href="/methodology"
               className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
@@ -89,7 +86,16 @@ export default function AboutPage() {
             page.
           </p>
           <p>
-            Track Migrations is a sister project to{" "}
+            The original project lives at{" "}
+            <a
+              href="https://trackmigrations.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+            >
+              trackmigrations.org
+            </a>
+            , alongside its sister project{" "}
             <a
               href="https://trackpolicy.org"
               target="_blank"
@@ -98,10 +104,9 @@ export default function AboutPage() {
             >
               Track Policy
             </a>
-            , which maps AI and data center legislation. Both projects
-            share the same premise: make public data accessible enough
-            that people can form their own opinions with real information
-            in front of them.
+            , which maps AI and data center legislation. Both share the same
+            premise: make public data accessible enough that people can form
+            their own opinions with real information in front of them.
           </p>
 
           <div className="pt-5 mt-5 border-t border-black/[.06]">
@@ -125,6 +130,28 @@ export default function AboutPage() {
           </div>
           <ul className="text-sm text-ink/80 leading-relaxed space-y-2">
             <li>
+              Original project by{" "}
+              <a
+                href="https://isabellereks.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+              >
+                Isabelle Reksopuro
+              </a>
+            </li>
+            <li>
+              Maintained by{" "}
+              <a
+                href="https://vikassabbi.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+              >
+                Vikas Sabbi
+              </a>
+            </li>
+            <li>
               Icons by{" "}
               <a
                 href="https://remixicon.com"
@@ -144,17 +171,6 @@ export default function AboutPage() {
                 className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
               >
                 COBE
-              </a>
-            </li>
-            <li>
-              Built by{" "}
-              <a
-                href="https://isabellereks.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
-              >
-                Isabelle Reksopuro
               </a>
             </li>
             <li className="pt-2 text-muted">

@@ -1,67 +1,4087 @@
 {
-  "schemaVersion": "immigrant-presence.state-metrics.placeholder.v1",
-  "generatedAt": null,
-  "notes": "Placeholder only. All metric 'value' fields must remain null until populated from sourced datasets (e.g., ACS).",
+  "schemaVersion": "immigrant-presence.state-metrics.v2",
+  "generatedAt": "2026-09-07T00:00:00Z",
+  "notes": "Populated 2026-09-07 from AIC Map the Impact (ACS 2023 vintage). healthcareWorkers left null (no per-state count published).",
   "metrics": [
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "foreignBornPopulation",
-      "value": null,
+      "value": 202857,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "Census ACS API",
-      "sourceUrl": "https://api.census.gov/data.html",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Foreign-born population (stock). Store ACS vintage in dataYear."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "nonCitizenPopulation",
-      "value": null,
+      "value": 125545,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "Census ACS API",
-      "sourceUrl": "https://api.census.gov/data.html",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Non-citizen foreign-born residents (stock)."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "immigrantWorkers",
-      "value": null,
+      "value": 124126,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "Census ACS API",
-      "sourceUrl": "https://api.census.gov/data.html",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Foreign-born employed workers. Define universe (civilian employed, 16+)."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "stemWorkers",
-      "value": null,
+      "value": 15176,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "Census ACS API",
-      "sourceUrl": "https://api.census.gov/data.html",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Derived from ACS occupation codes; must document STEM definition in methodology when implemented."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "healthcareWorkers",
       "value": null,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "Census ACS API",
-      "sourceUrl": "https://api.census.gov/data.html",
-      "lastFetched": null,
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
       "confidence": null,
-      "notes": "Derived from ACS occupation codes; must document healthcare definition when implemented."
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 54123,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 21011,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 40182,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 984220,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 558695,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 590821,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "stemWorkers",
+      "value": 52861,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 160995,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 110003,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 108767,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 10633225,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 5237351,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 6640520,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "stemWorkers",
+      "value": 697741,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 563124,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 318785,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 384083,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "stemWorkers",
+      "value": 41058,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 587525,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 268383,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 385408,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "stemWorkers",
+      "value": 35253,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 118923,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 61321,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 79722,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "stemWorkers",
+      "value": 11283,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 93768,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 46802,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 68430,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "stemWorkers",
+      "value": 7954,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 4988231,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 2204344,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 3086783,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "stemWorkers",
+      "value": 166229,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1278205,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 683192,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 864248,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "stemWorkers",
+      "value": 93381,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 258829,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 93318,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 163794,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "stemWorkers",
+      "value": 9639,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 112757,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 64282,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 72304,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1880469,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 975845,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 1230717,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "stemWorkers",
+      "value": 113023,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 426541,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 264933,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 283985,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "stemWorkers",
+      "value": 30035,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 187254,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 114002,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 126677,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "stemWorkers",
+      "value": 11353,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 209675,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 131131,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 141029,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "stemWorkers",
+      "value": 12092,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 202940,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 113751,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 129046,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "stemWorkers",
+      "value": 8121,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 222968,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 135164,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 139522,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "stemWorkers",
+      "value": 7550,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 56338,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 28416,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 34017,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1052163,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 475862,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 729099,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "stemWorkers",
+      "value": 92597,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1270507,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 596525,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 856080,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "stemWorkers",
+      "value": 119810,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 740327,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 326498,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 437046,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "stemWorkers",
+      "value": 70250,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 482367,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 208797,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 339138,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "stemWorkers",
+      "value": 38121,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 74293,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 50075,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 45005,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 301306,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 159311,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 197015,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "stemWorkers",
+      "value": 25390,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 25078,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 9536,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 16058,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 153246,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 98111,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 101219,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "stemWorkers",
+      "value": 8114,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 613801,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 314257,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 386967,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "stemWorkers",
+      "value": 15378,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 99371,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 41306,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 65260,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "stemWorkers",
+      "value": 9452,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 2246839,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 1010111,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 1511873,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "stemWorkers",
+      "value": 180056,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 214936,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 127922,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 130754,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "stemWorkers",
+      "value": 7827,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 4529951,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 1858506,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 2816868,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "stemWorkers",
+      "value": 170184,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1003467,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 585187,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 664382,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "stemWorkers",
+      "value": 77847,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 27848,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 14033,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 20528,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 601136,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 293112,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 378664,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "stemWorkers",
+      "value": 48540,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 245502,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 157403,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 159751,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "stemWorkers",
+      "value": 10190,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 404178,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 216697,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 272521,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "stemWorkers",
+      "value": 31542,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1021219,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 476532,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 647481,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "stemWorkers",
+      "value": 81739,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 160040,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 74408,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 98977,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 314003,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 183626,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 205310,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "stemWorkers",
+      "value": 18320,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 42818,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 19287,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 28715,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 431303,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 272501,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 280724,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "stemWorkers",
+      "value": 22175,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 5442815,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 3430008,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 3497811,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "stemWorkers",
+      "value": 334936,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 304918,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 188475,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 215425,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "stemWorkers",
+      "value": 20661,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 28864,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 8602,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 20314,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1153272,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 509588,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 789381,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "stemWorkers",
+      "value": 106704,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 1222340,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 643552,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 819971,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "stemWorkers",
+      "value": 158702,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 32985,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 15613,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 20826,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 320046,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 188332,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 218721,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "stemWorkers",
+      "value": 23799,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "foreignBornPopulation",
+      "value": 21599,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born (immigrant) residents, AIC analysis of ACS 2023 1-year data."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "nonCitizenPopulation",
+      "value": 14159,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Derived: immigrant residents minus naturalized citizens (AIC, ACS 2023 vintage). Includes lawful permanent residents, temporary visa holders, and undocumented residents."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "immigrantWorkers",
+      "value": 14502,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born labor force (16+), AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
     }
   ]
 }

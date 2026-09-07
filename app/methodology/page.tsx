@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Methodology · Track Migrations",
+  title: "Methodology · migration visualization (fork)",
 };
 
 export default function MethodologyPage() {

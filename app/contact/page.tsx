@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact · Track Migrations",
+  title: "Contact · migration visualization (fork)",
 };
 
 export default function ContactPage() {
@@ -25,58 +25,39 @@ export default function ContactPage() {
 
         <div className="text-base text-ink/80 leading-relaxed space-y-5">
           <p>
-            If a number is wrong, a source is outdated, or something
-            feels misleading, please tell me. Corrections make the site
-            more accurate and I want them.
+            If a number is wrong, a source is outdated, or something feels
+            misleading, please tell me. Corrections make the site more
+            accurate and I want them.
           </p>
           <p>
-            Tips on data sources I should be incorporating are also
-            welcome, especially state-level settlement data, economic
-            studies, or anything not covered by the federal datasets.
+            Tips on data sources I should be incorporating are also welcome,
+            especially state-level settlement data, economic studies, or
+            anything not covered by the federal datasets. For questions about
+            the original project&rsquo;s data pipeline, start with{" "}
+            <a
+              href="https://trackmigrations.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+            >
+              trackmigrations.org
+            </a>
+            .
           </p>
         </div>
 
         <div className="mt-12 pt-10 border-t border-black/[.06] space-y-5">
           <div>
             <div className="text-[11px] font-medium tracking-tight text-muted mb-1.5">
-              Email
-            </div>
-            <a
-              href="mailto:reksopuro.isabelle@gmail.com"
-              className="text-base text-ink underline underline-offset-2 hover:text-muted transition-colors"
-            >
-              reksopuro.isabelle@gmail.com
-            </a>
-          </div>
-
-          <div>
-            <div className="text-[11px] font-medium tracking-tight text-muted mb-1.5">
-              Twitter / X
-            </div>
-            <a
-              href="https://x.com/isareksopuro"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base text-ink underline underline-offset-2 hover:text-muted transition-colors"
-            >
-              @isareksopuro
-            </a>
-            <span className="text-sm text-muted ml-2">
-              DMs are open for quick tips.
-            </span>
-          </div>
-
-          <div>
-            <div className="text-[11px] font-medium tracking-tight text-muted mb-1.5">
               GitHub
             </div>
             <a
-              href="https://github.com/isabellereks/track-migrations"
+              href="https://github.com/sabbivikas/immigration"
               target="_blank"
               rel="noopener noreferrer"
               className="text-base text-ink underline underline-offset-2 hover:text-muted transition-colors"
             >
-              github.com/isabellereks/track-migrations
+              github.com/sabbivikas/immigration
             </a>
             <span className="text-sm text-muted ml-2">
               Open an issue for data corrections.
@@ -85,15 +66,29 @@ export default function ContactPage() {
 
           <div>
             <div className="text-[11px] font-medium tracking-tight text-muted mb-1.5">
-              Personal site
+              Twitter / X
             </div>
             <a
-              href="https://isabellereks.com"
+              href="https://x.com/vikassabbi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-base text-ink underline underline-offset-2 hover:text-muted transition-colors"
             >
-              isabellereks.com
+              @vikassabbi
+            </a>
+          </div>
+
+          <div>
+            <div className="text-[11px] font-medium tracking-tight text-muted mb-1.5">
+              Site
+            </div>
+            <a
+              href="https://vikassabbi.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base text-ink underline underline-offset-2 hover:text-muted transition-colors"
+            >
+              vikassabbi.com
             </a>
           </div>
         </div>

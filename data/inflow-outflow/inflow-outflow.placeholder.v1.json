@@ -1,22 +1,30 @@
 {
-  "schemaVersion": "inflow-outflow.placeholder.v1",
-  "generatedAt": null,
-  "notes": "Placeholder only. Outflow is multi-definition; keep separate measures rather than implying a single truth. All 'value' fields must remain null until populated from sourced datasets.",
+  "schemaVersion": "inflow-outflow.v2",
+  "generatedAt": "2026-09-07T00:00:00Z",
+  "notes": "netInternationalMigration populated 2026-09-07 from Census Vintage 2025. IRS SOI and removals left null (not ingested / not published per state).",
   "series": [
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "netInternationalMigration",
-      "value": null,
+      "value": 8946,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "Census Net International Migration",
-      "sourceUrl": "https://www.census.gov/",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Net movement (inflow minus outflow) estimate. May be model-based; document uncertainty."
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "domesticInflowIrsSoi",
       "value": null,
       "unit": "taxReturns",
@@ -25,10 +33,14 @@
       "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
       "lastFetched": null,
       "confidence": null,
-      "notes": "State inflow based on tax-return address changes. Universe is tax filers/returns; not a full population flow."
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "domesticOutflowIrsSoi",
       "value": null,
       "unit": "taxReturns",
@@ -37,10 +49,14 @@
       "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
       "lastFetched": null,
       "confidence": null,
-      "notes": "State outflow based on tax-return address changes. Universe is tax filers/returns; not a full population flow."
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "removalsAndReturns",
       "value": null,
       "unit": "people",
@@ -49,7 +65,3207 @@
       "sourceUrl": "https://www.dhs.gov/ohss",
       "lastFetched": null,
       "confidence": null,
-      "notes": "Enforcement outflow only (removals/returns). Not equivalent to total emigration."
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 1959,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 28219,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 5470,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 109278,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 15356,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 17534,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 3473,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 3915,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 178674,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 42579,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 4768,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 2148,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 44752,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 17852,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 5903,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 7440,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 15709,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 14900,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 4040,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 20503,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 40240,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 30706,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 12486,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 7451,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 12665,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 899,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 6599,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 10551,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 2403,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 53064,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 2879,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 95634,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 46890,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 2810,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 28505,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 8420,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 9636,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 26921,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 5923,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 12930,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 3183,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 17990,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 167475,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 7501,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 623,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 40436,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 46202,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 244,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 7260,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "netInternationalMigration",
+      "value": 258,
+      "unit": "people",
+      "dataYear": 2025,
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "medium",
+      "notes": "Census Vintage 2025 estimate of net international migration, July 2024 - July 2025. Model-based estimate, not a count."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "domesticInflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State inflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "domesticOutflowIrsSoi",
+      "value": null,
+      "unit": "taxReturns",
+      "dataYear": null,
+      "sourceName": "IRS SOI Migration",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "State outflow by tax-return address changes. Not yet ingested; universe is tax filers only."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "removalsAndReturns",
+      "value": null,
+      "unit": "people",
+      "dataYear": null,
+      "sourceName": "DHS/OHSS / ICE monthly stats",
+      "sourceUrl": "https://www.dhs.gov/ohss",
+      "lastFetched": null,
+      "confidence": null,
+      "notes": "ICE does not publish removals by state of residence; only national totals. Left null rather than misallocated."
     }
   ]
 }
