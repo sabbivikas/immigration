@@ -1,79 +1,4903 @@
 {
-  "schemaVersion": "economic-contribution.state-metrics.placeholder.v1",
-  "generatedAt": null,
-  "notes": "Placeholder only. All metric 'value' fields must remain null until populated from sourced datasets (e.g., AIC). Keep 'dataYear' (official vintage) separate from 'lastFetched' (your retrieval date).",
+  "schemaVersion": "economic-contribution.state-metrics.v2",
+  "generatedAt": "2026-09-07T00:00:00Z",
+  "notes": "Populated 2026-09-07 from AIC Map the Impact (2023). healthcareWorkers left null; undocumentedEconomicContribution = taxes paid by undocumented households.",
   "metrics": [
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "taxesPaid",
-      "value": null,
+      "value": 2200486156,
       "unit": "usd",
-      "dataYear": null,
-      "sourceName": "American Immigration Council (AIC)",
-      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Total taxes paid by immigrants (definition must match the source: federal/state/local and household vs individual)."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "spendingPower",
-      "value": null,
+      "value": 6408526137,
       "unit": "usd",
-      "dataYear": null,
-      "sourceName": "American Immigration Council (AIC)",
-      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Immigrant spending power (typically disposable income estimate; confirm source definition)."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "entrepreneurs",
-      "value": null,
+      "value": 20868,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "American Immigration Council (AIC)",
-      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Number of immigrant entrepreneurs/business owners (confirm exact universe)."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "stemWorkers",
-      "value": null,
+      "value": 15176,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "American Immigration Council (AIC)",
-      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "If sourced from AIC, keep consistent with their STEM definition; otherwise derive from ACS in immigrant-presence dataset."
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
       "metricName": "healthcareWorkers",
       "value": null,
       "unit": "people",
-      "dataYear": null,
-      "sourceName": "American Immigration Council (AIC)",
-      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
-      "lastFetched": null,
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
       "confidence": null,
-      "notes": "If sourced from AIC, keep consistent with their healthcare definition; otherwise derive from ACS in immigrant-presence dataset."
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
     },
     {
-      "state": { "code": "CA", "name": "California", "fips": "06" },
+      "state": {
+        "code": "AL",
+        "name": "Alabama",
+        "fips": "01"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 423786425,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "taxesPaid",
+      "value": 522258863,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "spendingPower",
+      "value": 1831944146,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "AK",
+        "name": "Alaska",
+        "fips": "02"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 63997033,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "taxesPaid",
+      "value": 11050412059,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "spendingPower",
+      "value": 33068720344,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "entrepreneurs",
+      "value": 79328,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "stemWorkers",
+      "value": 52861,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "AZ",
+        "name": "Arizona",
+        "fips": "04"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 2051131935,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "taxesPaid",
+      "value": 1496658806,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "spendingPower",
+      "value": 4623767600,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "entrepreneurs",
+      "value": 11763,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "AR",
+        "name": "Arkansas",
+        "fips": "05"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 441155246,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "taxesPaid",
+      "value": 168104372304,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "spendingPower",
+      "value": 404445114750,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "entrepreneurs",
+      "value": 880887,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "stemWorkers",
+      "value": 697741,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "CA",
+        "name": "California",
+        "fips": "06"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 21005670188,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "taxesPaid",
+      "value": 7711429201,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "spendingPower",
+      "value": 21311264182,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "entrepreneurs",
+      "value": 45373,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "stemWorkers",
+      "value": 41058,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "CO",
+        "name": "Colorado",
+        "fips": "08"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1668896844,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "taxesPaid",
+      "value": 9071622677,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "spendingPower",
+      "value": 21660378544,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "entrepreneurs",
+      "value": 47414,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "stemWorkers",
+      "value": 35253,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "CT",
+        "name": "Connecticut",
+        "fips": "09"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1006043104,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "taxesPaid",
+      "value": 1394326824,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "spendingPower",
+      "value": 4220460679,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "entrepreneurs",
+      "value": 6915,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "stemWorkers",
+      "value": 11283,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "DE",
+        "name": "Delaware",
+        "fips": "10"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 160697067,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "taxesPaid",
+      "value": 2502891262,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "spendingPower",
+      "value": 5110109334,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "stemWorkers",
+      "value": 7954,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "DC",
+        "name": "District of Columbia",
+        "fips": "11"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 194483766,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "taxesPaid",
+      "value": 49761404376,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "spendingPower",
+      "value": 157905600403,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "entrepreneurs",
+      "value": 521718,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "stemWorkers",
+      "value": 166229,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "FL",
+        "name": "Florida",
+        "fips": "12"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 6378255072,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "taxesPaid",
+      "value": 15753806163,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "spendingPower",
+      "value": 44029205556,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "entrepreneurs",
+      "value": 124360,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "stemWorkers",
+      "value": 93381,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "GA",
+        "name": "Georgia",
+        "fips": "13"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 2686546910,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "taxesPaid",
+      "value": 3501130364,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "spendingPower",
+      "value": 8116541232,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "entrepreneurs",
+      "value": 20350,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "stemWorkers",
+      "value": 9639,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "HI",
+        "name": "Hawaii",
+        "fips": "15"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 213513279,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "taxesPaid",
+      "value": 853698069,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "spendingPower",
+      "value": 2894863930,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "entrepreneurs",
+      "value": 6136,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "ID",
+        "name": "Idaho",
+        "fips": "16"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 203164645,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "taxesPaid",
+      "value": 27433180971,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "spendingPower",
+      "value": 68469507756,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "entrepreneurs",
+      "value": 146866,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "stemWorkers",
+      "value": 113023,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "IL",
+        "name": "Illinois",
+        "fips": "17"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 4901583289,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "taxesPaid",
+      "value": 4100364015,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "spendingPower",
+      "value": 12332841647,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "entrepreneurs",
+      "value": 23656,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "stemWorkers",
+      "value": 30035,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "IN",
+        "name": "Indiana",
+        "fips": "18"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 800517092,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "taxesPaid",
+      "value": 1768673313,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "spendingPower",
+      "value": 5214532446,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "entrepreneurs",
+      "value": 13073,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "stemWorkers",
+      "value": 11353,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "IA",
+        "name": "Iowa",
+        "fips": "19"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 418553832,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "taxesPaid",
+      "value": 2179763208,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "spendingPower",
+      "value": 6132987677,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "entrepreneurs",
+      "value": 13820,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "stemWorkers",
+      "value": 12092,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "KS",
+        "name": "Kansas",
+        "fips": "20"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 614432042,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "taxesPaid",
+      "value": 1744139412,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "spendingPower",
+      "value": 5233444589,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "entrepreneurs",
+      "value": 17089,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "stemWorkers",
+      "value": 8121,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "KY",
+        "name": "Kentucky",
+        "fips": "21"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 233113133,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "taxesPaid",
+      "value": 2134824244,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "spendingPower",
+      "value": 5873718062,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "entrepreneurs",
+      "value": 23843,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "stemWorkers",
+      "value": 7550,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "LA",
+        "name": "Louisiana",
+        "fips": "22"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 420735800,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "taxesPaid",
+      "value": 625811162,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "spendingPower",
+      "value": 1613858111,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "ME",
+        "name": "Maine",
+        "fips": "23"
+      },
       "metricName": "undocumentedEconomicContribution",
       "value": null,
       "unit": "usd",
-      "dataYear": null,
-      "sourceName": "American Immigration Council (AIC)",
-      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
-      "lastFetched": null,
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
       "confidence": null,
-      "notes": "Publisher estimate. Must be labeled as estimate and not treated as real-time."
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "taxesPaid",
+      "value": 15802039554,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "spendingPower",
+      "value": 39453569352,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "entrepreneurs",
+      "value": 79848,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "stemWorkers",
+      "value": 92597,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MD",
+        "name": "Maryland",
+        "fips": "24"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1398929317,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "taxesPaid",
+      "value": 20404977134,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "spendingPower",
+      "value": 51772231860,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "entrepreneurs",
+      "value": 91411,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "stemWorkers",
+      "value": 119810,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MA",
+        "name": "Massachusetts",
+        "fips": "25"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1375262672,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "taxesPaid",
+      "value": 8312605149,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "spendingPower",
+      "value": 24079127435,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "entrepreneurs",
+      "value": 43744,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "stemWorkers",
+      "value": 70250,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MI",
+        "name": "Michigan",
+        "fips": "26"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 887305768,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "taxesPaid",
+      "value": 6162772307,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "spendingPower",
+      "value": 16963381820,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "entrepreneurs",
+      "value": 28024,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "stemWorkers",
+      "value": 38121,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MN",
+        "name": "Minnesota",
+        "fips": "27"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 597312330,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "taxesPaid",
+      "value": 711273419,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "spendingPower",
+      "value": 2032836254,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "entrepreneurs",
+      "value": 7264,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MS",
+        "name": "Mississippi",
+        "fips": "28"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 114797738,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "taxesPaid",
+      "value": 3317441961,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "spendingPower",
+      "value": 9884821438,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "entrepreneurs",
+      "value": 19637,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "stemWorkers",
+      "value": 25390,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MO",
+        "name": "Missouri",
+        "fips": "29"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 384775566,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "taxesPaid",
+      "value": 360382689,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "spendingPower",
+      "value": 983465926,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "MT",
+        "name": "Montana",
+        "fips": "30"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "taxesPaid",
+      "value": 1614345704,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "spendingPower",
+      "value": 4646667351,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "entrepreneurs",
+      "value": 11016,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "stemWorkers",
+      "value": 8114,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NE",
+        "name": "Nebraska",
+        "fips": "31"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 457099571,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "taxesPaid",
+      "value": 5854461887,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "spendingPower",
+      "value": 19124507261,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "entrepreneurs",
+      "value": 40902,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "stemWorkers",
+      "value": 15378,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NV",
+        "name": "Nevada",
+        "fips": "32"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1342421430,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "taxesPaid",
+      "value": 1335615270,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "spendingPower",
+      "value": 4092494483,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "stemWorkers",
+      "value": 9452,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NH",
+        "name": "New Hampshire",
+        "fips": "33"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "taxesPaid",
+      "value": 39913164277,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "spendingPower",
+      "value": 94510269604,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "entrepreneurs",
+      "value": 155113,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "stemWorkers",
+      "value": 180056,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NJ",
+        "name": "New Jersey",
+        "fips": "34"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 4661240823,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "taxesPaid",
+      "value": 1928731871,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "spendingPower",
+      "value": 5576401451,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "entrepreneurs",
+      "value": 15559,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "stemWorkers",
+      "value": 7827,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NM",
+        "name": "New Mexico",
+        "fips": "35"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 467277454,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "taxesPaid",
+      "value": 74774008428,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "spendingPower",
+      "value": 160548690937,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "entrepreneurs",
+      "value": 316452,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "stemWorkers",
+      "value": 170184,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NY",
+        "name": "New York",
+        "fips": "36"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 6708177196,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "taxesPaid",
+      "value": 11438436688,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "spendingPower",
+      "value": 33706952107,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "entrepreneurs",
+      "value": 78541,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "stemWorkers",
+      "value": 77847,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "NC",
+        "name": "North Carolina",
+        "fips": "37"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1886841004,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "taxesPaid",
+      "value": 371914802,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "spendingPower",
+      "value": 1083571242,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "ND",
+        "name": "North Dakota",
+        "fips": "38"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "taxesPaid",
+      "value": 7314737328,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "spendingPower",
+      "value": 20029116544,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "entrepreneurs",
+      "value": 38167,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "stemWorkers",
+      "value": 48540,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "OH",
+        "name": "Ohio",
+        "fips": "39"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 739810728,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "taxesPaid",
+      "value": 2281633574,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "spendingPower",
+      "value": 6967507267,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "entrepreneurs",
+      "value": 21053,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "stemWorkers",
+      "value": 10190,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "OK",
+        "name": "Oklahoma",
+        "fips": "40"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 561761309,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "taxesPaid",
+      "value": 5615451634,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "spendingPower",
+      "value": 14346712503,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "entrepreneurs",
+      "value": 29982,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "stemWorkers",
+      "value": 31542,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "OR",
+        "name": "Oregon",
+        "fips": "41"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 695568965,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "taxesPaid",
+      "value": 13576909082,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "spendingPower",
+      "value": 35886239589,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "entrepreneurs",
+      "value": 66972,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "stemWorkers",
+      "value": 81739,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "fips": "42"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1199472348,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "taxesPaid",
+      "value": 1767074187,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "spendingPower",
+      "value": 4985786062,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "entrepreneurs",
+      "value": 11838,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island",
+        "fips": "44"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 272292534,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "taxesPaid",
+      "value": 3507601781,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "spendingPower",
+      "value": 10164182996,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "entrepreneurs",
+      "value": 28837,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "stemWorkers",
+      "value": 18320,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "SC",
+        "name": "South Carolina",
+        "fips": "45"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 633890155,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "taxesPaid",
+      "value": 243117896,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "spendingPower",
+      "value": 912561455,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "SD",
+        "name": "South Dakota",
+        "fips": "46"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "taxesPaid",
+      "value": 4394374637,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "spendingPower",
+      "value": 13749026827,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "entrepreneurs",
+      "value": 30041,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "stemWorkers",
+      "value": 22175,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "TN",
+        "name": "Tennessee",
+        "fips": "47"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 915645497,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "taxesPaid",
+      "value": 58070138294,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "spendingPower",
+      "value": 176252962402,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "entrepreneurs",
+      "value": 496686,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "stemWorkers",
+      "value": 334936,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "TX",
+        "name": "Texas",
+        "fips": "48"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 13804504173,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "taxesPaid",
+      "value": 3103809786,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "spendingPower",
+      "value": 9088919959,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "entrepreneurs",
+      "value": 21270,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "stemWorkers",
+      "value": 20661,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "UT",
+        "name": "Utah",
+        "fips": "49"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 859121892,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "taxesPaid",
+      "value": 503921689,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "spendingPower",
+      "value": 1205816534,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "VT",
+        "name": "Vermont",
+        "fips": "50"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "taxesPaid",
+      "value": 18294051591,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "spendingPower",
+      "value": 46546278672,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "entrepreneurs",
+      "value": 91122,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "stemWorkers",
+      "value": 106704,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "VA",
+        "name": "Virginia",
+        "fips": "51"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 1737456042,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "taxesPaid",
+      "value": 22855602398,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "spendingPower",
+      "value": 58398859782,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "entrepreneurs",
+      "value": 82161,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "stemWorkers",
+      "value": 158702,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WA",
+        "name": "Washington",
+        "fips": "53"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 3071991736,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "taxesPaid",
+      "value": 450310844,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "spendingPower",
+      "value": 1215842557,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WV",
+        "name": "West Virginia",
+        "fips": "54"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "taxesPaid",
+      "value": 3451595195,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "spendingPower",
+      "value": 10058597542,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "entrepreneurs",
+      "value": 18162,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "stemWorkers",
+      "value": 23799,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WI",
+        "name": "Wisconsin",
+        "fips": "55"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": 685424638,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "taxesPaid",
+      "value": 232956265,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Total federal + state + local taxes paid by immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "spendingPower",
+      "value": 708981565,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "Disposable (after-tax) income of immigrant households (AIC, 2023)."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "entrepreneurs",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Self-employed immigrant business owners (AIC, ACS 2023)."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "stemWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Foreign-born STEM workers, AIC analysis of ACS 2023."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "healthcareWorkers",
+      "value": null,
+      "unit": "people",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Not published as a per-state count by AIC; left null rather than estimated."
+    },
+    {
+      "state": {
+        "code": "WY",
+        "name": "Wyoming",
+        "fips": "56"
+      },
+      "metricName": "undocumentedEconomicContribution",
+      "value": null,
+      "unit": "usd",
+      "dataYear": 2023,
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": null,
+      "notes": "Taxes paid by undocumented immigrant households (AIC, 2023). Narrowest defensible measure of economic contribution."
     }
   ]
 }
