@@ -7,12 +7,14 @@ This repository is a **fork and modification** of **[Track Migrations](https://t
 Maintained by **Vikas Sabbi**. This pass (and current scope) focuses on **identity and attribution only**:
 
 - Site metadata (title / description) in `app/layout.tsx`
-- Footer attribution and fork labeling in `components/PageClient.tsx`
-- About-page note explaining the fork in `app/about/page.tsx`
+- Footer attribution and fork labeling in `components/PageClient.tsx` and header labeling in `components/ui/Header.tsx`
+- About page rewritten for the fork maintainer in `app/about/page.tsx` (upstream attribution preserved)
+- Contact page now points to the fork maintainer in `app/contact/page.tsx`
 - README (this file)
 - Light theme tuning in `app/globals.css` (cool-neutral paper background)
+- State-level settlement/contribution datasets populated from sourced releases (see below)
 
-**Not changed:** data files, methodology copy, numeric claims, `scripts/normalize.py`, or map / particle logic.
+**Not changed:** methodology copy's numeric claims, `scripts/normalize.py`, or map / particle logic.
 
 ## Original project
 
@@ -48,9 +50,14 @@ npm run lint    # eslint
 
 A coherent next design pass could go **cool editorial**: slightly blue-gray page background, ink shifted toward slate, one restrained accent (e.g. deep teal) for links and focus rings—keeping high contrast and respecting `prefers-reduced-motion`. The current fork only applies a **light** step in that direction via `globals.css` tokens.
 
-## Data architecture skeleton (placeholders only)
+## State settlement & contribution data (populated)
 
-This fork adds **placeholder-only** data scaffolding for future, source-backed datasets. These files contain **no statistics** — all metric `value` fields are `null` until populated from real sources.
+The scaffolding datasets are now populated from real sources (Sept 2026 pass):
+
+- `data/immigrant-presence/`: AIC Map the Impact (ACS 2023 vintage) — foreign-born residents, derived non-citizen count, foreign-born labor force, STEM workers. `healthcareWorkers` stays null: no per-state count is published.
+- `data/economic-contribution/`: AIC 2023 — taxes paid, spending power, entrepreneurs, undocumented-household taxes.
+- `data/inflow-outflow/`: Census Vintage 2025 net international migration per state (July 2024 - July 2025, model-based estimate). IRS SOI and removals stay null.
+- `data/sources/`: live source registry with `dataYear` vs `lastFetched` kept separate.
 
 ### Folder structure
 
