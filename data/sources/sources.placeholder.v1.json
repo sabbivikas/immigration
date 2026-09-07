@@ -1,49 +1,42 @@
 {
-  "schemaVersion": "sources.placeholder.v1",
-  "generatedAt": null,
-  "notes": "Placeholder only. Replace with real source registry entries. Keep 'lastFetched' as the date YOU retrieved the source, separate from any official 'dataYear' within datasets.",
+  "schemaVersion": "sources.registry.v1",
+  "generatedAt": "2026-09-07T00:00:00Z",
+  "notes": "Source registry for populated state metrics. dataYear = official vintage, lastFetched = retrieval date.",
   "sources": [
+    {
+      "sourceName": "American Immigration Council (AIC) Map the Impact",
+      "sourceUrl": "https://map.americanimmigrationcouncil.org/",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "State-level immigrant contribution metrics. Underlying data file: /wp-content/themes/map-the-impact/mti-state-data.json. Vintage: ACS 2023 analyses (Year field 2023)."
+    },
+    {
+      "sourceName": "Census Bureau Vintage 2025 State Population Estimates (components of change)",
+      "sourceUrl": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "lastFetched": "2026-09-07",
+      "confidence": "high",
+      "notes": "NST-EST2025-ALLDATA.csv, NETINTERNATIONALMIG2025 column. Estimates for July 1 2024 - July 1 2025."
+    },
     {
       "sourceName": "Census ACS API",
       "sourceUrl": "https://api.census.gov/data.html",
       "lastFetched": null,
       "confidence": null,
-      "notes": "Use for foreign-born population, citizenship, employment, occupation, income, education, place of birth. Values are lagged; always store the ACS vintage as dataYear."
-    },
-    {
-      "sourceName": "American Immigration Council (AIC)",
-      "sourceUrl": "https://www.americanimmigrationcouncil.org/",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Use for state-level taxes paid, spending power, entrepreneurship, STEM and healthcare workers, undocumented contribution. Prefer stable downloads; otherwise store raw artifacts under data/raw with checksums."
-    },
-    {
-      "sourceName": "DHS/OHSS Yearbook",
-      "sourceUrl": "https://www.dhs.gov/ohss",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Use for lawful immigration, naturalization, refugees, asylees. Often PDF/Excel; normalize into JSON with explicit dataYear."
-    },
-    {
-      "sourceName": "Census Net International Migration",
-      "sourceUrl": "https://www.census.gov/",
-      "lastFetched": null,
-      "confidence": null,
-      "notes": "Use for inflow/outflow estimates and net movement. Model-based; label uncertainty and avoid implying real-time precision."
+      "notes": "Reserved for direct ACS pulls (DP02 foreign-born / citizenship) in a later pass; current presence metrics use AIC analysis of ACS 2023."
     },
     {
       "sourceName": "IRS SOI Migration",
       "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-migration-data",
       "lastFetched": null,
       "confidence": null,
-      "notes": "Use for address-change-based inflow/outflow between states (tax-return universe). Not a full population measure; label limitations."
+      "notes": "Not yet ingested."
     },
     {
-      "sourceName": "BLS",
-      "sourceUrl": "https://www.bls.gov/developers/",
+      "sourceName": "DHS/OHSS Yearbook",
+      "sourceUrl": "https://www.dhs.gov/ohss",
       "lastFetched": null,
       "confidence": null,
-      "notes": "Use for labor/industry context series. Keep as context unless directly tied to immigrant measures via ACS."
+      "notes": "Used by upstream pipeline (scripts/normalize.py) for LPR / refugee layers."
     }
   ]
 }
